@@ -24,8 +24,8 @@ st.markdown("""
 
 
 # Title
-st.markdown("<h1>🚀 Ad Click Predictor</h1>", unsafe_allow_html=True)
-st.write("### Predict whether a user will click on an ad 💡")
+st.markdown("<h1> Ad Click Predictor</h1>", unsafe_allow_html=True)
+st.write("### Predict whether a user will click on an ad ")
 
 # Input fields
 time_spent = st.slider("Time on Site (minutes)", 0, 100, 60)
@@ -43,7 +43,7 @@ model = LogisticRegression(max_iter=1000)
 model.fit(X, y)
 
 # Predict
-if st.button("Predict 🚀"):
+if st.button("Predict "):
     prediction = model.predict([[time_spent, age, income, internet_usage]])
     prob = model.predict_proba([[time_spent, age, income, internet_usage]])
 
