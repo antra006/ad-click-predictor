@@ -29,7 +29,7 @@ st.write("### Predict whether a user will click on an ad ")
 
 # Input fields
 time_spent = st.slider("Time on Site (minutes)", 0, 100, 60)
-age = st.slider("Age (yrs)", 18, 60, 25)
+age = st.slider("Age (yrs)", 16, 60, 25)
 income = st.slider("Income (₹)", 10000, 100000, 50000)
 internet_usage = st.slider("Internet Usage (MB)", 50, 500, 200)
 # Load data
